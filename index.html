@@ -6,16 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <head>
-      <title>Rock, Paper, Scissors Game</title>
+      <title>Troll, Mermaid, Fairy</title>
       <link rel="stylesheet" href="style.css">
 
   </head>
 
   <body>
     <div class="flex-container">
-    <h1>Rock, Paper, Scissors:</h1>
-    <button onclick="game()">Start Game</button>
+    <img class="background" src="images/background1.jpg" alt="A Cartoon Forest">
+    <div class="centered">
+      <h1>~Troll, Mermaid or Fairy~</h1>
+    <h1 class="ties">Ties: 0<h1>
+    <div class="winnerDiv"></div>
+    <h1 class="winner"></h1>
+    <button class="reset" onclick="resetGame()">Click to Restart</button>
+    <div class="playSelection">
+      <h3 class="playerChoice"></h3>
+      <h3 class="playerScore">Score: 0</h3>
+      <div class="playerImg">
+          <img src="images/troll.jpg" alt="Troll Icon"  class="pImg" id="troll">
+          <img src="images/mermaid.jpg" alt="Mermaid Icon"  class="pImg" id="mermaid">
+          <img src="images/fairy.jpg" alt="Fairy Icon"  class="pImg" id="fairy">
+      </div>
     </div>
+
+    <div class="computerSelection">
+      <h3 class="computerChoice"></h3>
+      <h3 class="computerScore">Score: 0</h3>
+      <div class="computerImgs">
+          <img src="images/troll.jpg" alt="Troll Icon"  class="troll">
+          <img src="images/mermaid.jpg" alt="Mermaid Icon"  class="mermaid">
+          <img src="images/fairy.jpg" alt="Fairy Icon"  class="fairy">
+
+    </div>
+
+  <!--  <audio id="troll" src="sounds/club.mp3"></audio>
+    <audio id="mermaid" src="sounds/trident.mp3"></audio>
+    <audio id="fairy" src="sounds/wand.mp3"></audio> -->
   </body>
   
 <script src="main.js"></script> 
